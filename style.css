@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('./image/bluegreen-gradient-studio-room-abstract-260nw-2491716123.webp') no-repeat center center/cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.inner {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+}
+
+.inner h1 {
+  font-size: 2rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px 17px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+  background-color: #fff;
+  color: black;
+}
+
+.form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 1px solid skyblue;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #086fb4;
+  transition: all 0.2s ease;
+}
+
+.form button:hover {
+  background-color: cornflowerblue;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#task-list {
+  width: 100%;
+}
+
+#task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+#task-list li:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+#task-list li .checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(25, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  appearance: none;
+  background: transparent;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#task-list li .checkbox:checked {
+  background-color: #0f63c4;
+  transform: scale(1.1);
+}
+
+#task-list li .checkbox:checked::before {
+  content: '✓';
+  color: #fff;
+  font-size: 1rem;
+}
+
+#task-list li span {
+  flex: 1;
+  margin: 0 10px;
+  word-wrap: break-word;
+}
+
+.tasks-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.tasks-buttons button {
+  background-color: #0f63c4;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks-buttons button:hover {
+  transform: scale(1.2);
+}
+
+.tasks-buttons .edit-btn {
+  background: #ffbf00;
+}
+
+.tasks-buttons .delete-btn {
+  background: #086fb4;
+}
+
+.todos-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edit-input {
+  padding: 6px 10px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
